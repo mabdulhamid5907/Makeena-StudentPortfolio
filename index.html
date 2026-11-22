@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Makeena Abdulhamid</title>
+  <meta name="description" content="Student portfolio of Makeena Abdulhamid, a Computer Science student at Miva Open University.">
+  <link rel="icon" href="images/favicon" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html"><img src="images/favicon" alt="" width="34" height="34">Makeena Abdulhamid</a>
+      <nav aria-label="Main navigation" style="display:contents">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Student portfolio · COS 106</p>
+          <h1>Hi, I'm <span class="accent">Makeena Abdulhamid</span>.</h1>
+          <p class="typed-line" aria-live="off"><span id="typed" data-words='["a Computer Science student","a future software engineer","a curious problem solver","a web developer in the making"]'></span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="lead" id="welcome-msg">Welcome to my corner of the web! Good day.</p>
+          <p>I am a first-year Computer Science student at Miva Open University. I enjoy turning ideas into clean, usable software, and I use this site to share my skills, my projects, and the tools I build to stay on top of my studies.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="projects.html">View my projects →</a>
+            <a class="btn btn-outline" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <figure class="portrait" style="margin:0">
+        <img src="images/makeena.jpeg" alt="Portrait of Makeena Abdulhamid" width="400" height="480">          <figcaption class="badge"><span class="dot"></span>Open to internships</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container reveal" aria-label="At a glance">
+      <div class="stats">
+        <div class="stat"><b data-count="1">0</b><span>Projects built</span></div>
+        <div class="stat"><b data-count="3">0</b><span>Languages &amp; tools</span></div>
+        <div class="stat"><b data-count="4.0" data-decimals="1">0</b><span>Current CGPA (of 5.0)</span></div>
+        <div class="stat"><b data-count="100">0</b><span>Level</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">Brief biography</p>
+          <h2>Learning to build things that matter</h2>
+          <p>I grew up across three different states in Nigeria, which allowed me to experience different environments and cultures.</p>
+          <p>I am currently based in Abuja. My interest in technology began at the age of 17 when I started working with computers. What started as a simple experience soon developed into a genuine passion for technology. As I explored the world of computers, I discovered my desire to learn more and build a career in the IT industry. This passion motivated me to pursue a degree in Computer Science to broaden my knowledge, strengthen my technical skills, and explore the endless opportunities in the world of technology.</p>
+          <a class="btn btn-outline" href="about.html">More about me</a>
+        </div>
+        <div class="grid reveal">
+          <article class="card"><div class="icon" aria-hidden="true">🎓</div><h3>Education</h3><p>BSc Computer Science at Miva Open University, currently in Level 100.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">💻</div><h3>Skills</h3><p>HTML, CSS, JavaScript, Python and Git, with a growing interest in databases.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">🗓️</div><h3>Stay organised</h3><p>Try my <a href="planner.html">Academic Planner</a> to track tasks and deadlines.</p></article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong style="color:#fff;font-family:Georgia,serif;font-size:1.2rem">Makeena Abdulhamid</strong>
+          <p style="margin:.3rem 0 0">BSc Computer Science · Miva Open University</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Makeena Abdulhamid. Built with HTML, CSS and JavaScript for COS 106.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

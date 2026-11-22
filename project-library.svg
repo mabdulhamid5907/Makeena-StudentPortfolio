@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Screenshot of the Library Catalogue">
+<rect width="640" height="400" fill="#f4efe6"/><rect x="0" y="0" width="640" height="60" fill="#0f3556"/><rect x="40" y="18" width="300" height="24" rx="12" fill="#1d4a75"/>
+<g>
+<rect x="40" y="90" width="170" height="250" rx="8" fill="#e63b2e"/><rect x="60" y="120" width="100" height="12" rx="6" fill="#fff" opacity=".85"/><rect x="60" y="144" width="70" height="10" rx="5" fill="#fff" opacity=".6"/>
+<rect x="235" y="90" width="170" height="250" rx="8" fill="#0f3556"/><rect x="255" y="120" width="100" height="12" rx="6" fill="#fff" opacity=".85"/><rect x="255" y="144" width="70" height="10" rx="5" fill="#fff" opacity=".6"/>
+<rect x="430" y="90" width="170" height="250" rx="8" fill="#b8956a"/><rect x="450" y="120" width="100" height="12" rx="6" fill="#fff" opacity=".85"/><rect x="450" y="144" width="70" height="10" rx="5" fill="#fff" opacity=".6"/>
+</g>
+<g fill="#fff" opacity=".9"><circle cx="125" cy="270" r="30"/><circle cx="320" cy="270" r="30"/><circle cx="515" cy="270" r="30"/></g>
+</svg>

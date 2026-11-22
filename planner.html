@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Planner | Makeena Abdulhamid</title>
+  <meta name="description" content="Interactive planner to add, complete and delete academic tasks.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="34" height="34">Makeena Abdulhamid</a>
+      <nav aria-label="Main navigation" style="display:contents">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" aria-current="page">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Interactive tool</p>
+        <h1>Academic Planner</h1>
+        <p>Plan your coursework, tick tasks off, and stay ahead of every deadline.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container planner-layout">
+        <aside class="panel sticky" aria-labelledby="add-h">
+          <h2 id="add-h" style="font-size:1.4rem">Add a task</h2>
+          <form id="task-form" novalidate>
+            <div class="field">
+              <label for="task-title">Task</label>
+              <input id="task-title" name="title" type="text" maxlength="120" placeholder="e.g. Finish COS 106 lab" autocomplete="off">
+              <div class="error-msg" id="task-error" role="alert"></div>
+            </div>
+            <div class="field">
+              <label for="task-course">Course</label>
+              <select id="task-course" name="course">
+                <option>COS 106</option><option>COS 101</option><option>COS 102</option><option>MTH 101</option><option>GST 111</option><option>Personal</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="task-due">Due date</label>
+                <input id="task-due" name="due" type="date">
+              </div>
+              <div class="field">
+                <label for="task-priority">Priority</label>
+                <select id="task-priority" name="priority">
+                  <option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">+ Add task</button>
+          </form>
+        </aside>
+
+        <div>
+          <div class="panel progress-card">
+            <div class="progress-top"><span style="font-weight:600">Your progress</span><b id="progress-pct">0%</b></div>
+            <div class="bar" role="progressbar" id="progress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Tasks completed"><div class="bar-fill" id="progress-fill" style="width:0"></div></div>
+            <div class="counts"><span id="count-total">0 tasks</span> · <span id="count-done">0 completed</span> · <span id="count-left">0 remaining</span></div>
+          </div>
+
+          <div class="toolbar">
+            <div class="filter-bar" style="margin:0" role="group" aria-label="Filter tasks">
+              <button class="chip active" type="button" data-filter="all">All</button>
+              <button class="chip" type="button" data-filter="active">Active</button>
+              <button class="chip" type="button" data-filter="done">Completed</button>
+            </div>
+            <button class="btn btn-outline btn-sm" type="button" id="clear-done">Clear completed</button>
+          </div>
+
+          <ul class="task-list" id="task-list" aria-live="polite"></ul>
+          <div class="empty" id="empty-state" hidden><div class="big" aria-hidden="true">📝</div><p id="empty-text">No tasks yet. Add your first one!</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong style="color:#fff;font-family:Georgia,serif;font-size:1.2rem">Makeena Abdulhamid</strong>
+          <p style="margin:.3rem 0 0">BSc Computer Science · Miva Open University</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Makeena Abdulhamid. Built with HTML, CSS and JavaScript for COS 106.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
